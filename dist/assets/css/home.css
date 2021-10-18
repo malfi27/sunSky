@@ -1,0 +1,458 @@
+/*=============
+Font import From Google Font
+==============*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'Overpass', sans-serif;
+}
+
+/*=============
+Reset HTML
+==============*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after, p, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+/*=============
+Variable Collor
+==============*/
+body {
+  background: #070d19;
+}
+
+.mainHome {
+  transition: .5s;
+}
+
+.mainHome .navbar {
+  background: #0c1427;
+  transition: .5s;
+}
+
+.mainHome .navbar .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainHome .navbar .container .navbarMobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarMobile a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.mainHome .navbar .container .navbarMobile .navbarIcon {
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarMobile .navbarIcon img {
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarMobile .nameBrand {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mainHome .navbar .container .navbarMobile .nameBrand img {
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarMobile .userControl {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mainHome .navbar .container .navbarMobile .userControl a {
+  text-decoration: none;
+}
+
+.mainHome .navbar .container .navbarMobile .userControl a:hover ion-icon {
+  color: #727cf5;
+  transition: .3s;
+}
+
+.mainHome .navbar .container .navbarMobile .userControl a ion-icon {
+  color: #bfc3ce;
+  transition: .3s;
+}
+
+.mainHome .navbar .container .navbarDesktop {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarDesktop .iconBrand img {
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarDesktop .userControl {
+  display: flex;
+  align-items: center;
+}
+
+.mainHome .navbar .container .navbarDesktop .userControl a {
+  text-decoration: none;
+  color: #bfc3ce;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  transition: color .3s;
+}
+
+.mainHome .navbar .container .navbarDesktop .userControl a:hover {
+  color: #727cf5;
+  transition: color .3s;
+}
+
+.mainHome .navbar.onScrolled {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  transition: .5s;
+}
+
+.mainHome .mainContent .container .containerBanner {
+  position: relative;
+}
+
+.mainHome .mainContent .container .containerBanner .wrapperBanner .banner img {
+  width: 100%;
+}
+
+.mainHome .mainContent .container .containerBanner .leftArrow, .mainHome .mainContent .container .containerBanner .rightArrow {
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.mainHome .mainContent .container .containerBanner .leftArrow ion-icon, .mainHome .mainContent .container .containerBanner .rightArrow ion-icon {
+  color: #fff;
+  opacity: .5;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.mainHome .mainContent .container .containerBanner .leftArrow ion-icon:hover, .mainHome .mainContent .container .containerBanner .rightArrow ion-icon:hover {
+  opacity: 1;
+  transition: .3s;
+}
+
+.mainHome .mainContent .container .containerBanner .leftArrow {
+  left: 15px;
+}
+
+.mainHome .mainContent .container .containerBanner .rightArrow {
+  right: 15px;
+}
+
+.mainHome .mainContent .container .containerGameList {
+  margin-bottom: 1.5rem;
+}
+
+.mainHome .mainContent .container .containerGameList .nameContent {
+  color: #fff;
+}
+
+.mainHome .mainContent .container .containerGameList .product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainHome .mainContent .container .containerGameList .product-list .game {
+  background: #0c1427;
+  border: 1px solid #172340;
+  text-decoration: none;
+  transition: border .3s;
+  overflow: hidden;
+}
+
+.mainHome .mainContent .container .containerGameList .product-list .game:hover {
+  border: 1px solid #fff;
+  transition: border .3s;
+}
+
+.mainHome .mainContent .container .containerGameList .product-list .game .imgProduct {
+  width: 100%;
+  transition: transform .3s;
+}
+
+.mainHome .mainContent .container .containerGameList .product-list .game .imgProduct:hover {
+  transform: scale(1.1);
+  transition: transform .3s;
+}
+
+.mainHome .mainContent .container .containerGameList .product-list .game .nameProduct {
+  text-align: center;
+  color: #bfc3ce;
+  font-weight: 600;
+}
+
+.mainHome .mainContent .container .containerBenefit .headerBenefit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainHome .mainContent .container .containerBenefit .headerBenefit .arrowsBenefit {
+  display: flex;
+  align-items: center;
+}
+
+.mainHome .mainContent .container .containerBenefit .headerBenefit .arrowsBenefit .btnArrow {
+  border: 2px solid #727cf5;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.mainHome .mainContent .container .containerBenefit .headerBenefit .arrowsBenefit .btnArrow ion-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.mainHome .mainContent .container .containerBenefit .headerBenefit .arrowsBenefit .btnArrow:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.mainHome .mainContent .container .containerBenefit .headerBenefit .arrowsBenefit .btnArrow:hover {
+  background: #727cf5;
+  transition: .3s;
+}
+
+.mainHome .mainContent .container .containerBenefit .wrapperBenefit {
+  display: flex;
+  height: 100%;
+}
+
+.mainHome .mainContent .container .containerBenefit .wrapperBenefit .benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 3px solid #727cf5;
+  border-radius: 20px;
+  width: 100%;
+  background: #0c1427;
+  color: #bfc3ce;
+  transition: .5s;
+  height: 100%;
+}
+
+.mainHome .mainContent .container .containerBenefit .wrapperBenefit .benefit:hover {
+  background: #727cf5;
+  border: 3px solid #1c2741;
+  transition: .5s;
+}
+
+.mainHome .mainContent .container .containerBenefit .wrapperBenefit .benefit .iconBenefit {
+  width: 100%;
+}
+
+.mainHome .mainContent .container .containerBenefit .wrapperBenefit .benefit .nameBenefit {
+  font-weight: 800;
+}
+
+.mainHome .mainContent .container .containerBenefit .wrapperBenefit .slick-list .slick-track {
+  display: flex !important;
+}
+
+.mainHome .mainContent .container .containerBenefit .wrapperBenefit .slick-list .slick-track .slick-slide {
+  height: inherit !important;
+}
+
+.mainHome .mobileMenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #0c1427;
+}
+
+.mainHome .mobileMenu .menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #bfc3ce;
+}
+
+@media screen and (min-width: 0px) {
+  .mainHome .navbar .container .navbarMobile .navbarIcon img {
+    max-width: 30px;
+  }
+  .mainHome .navbar .container .navbarMobile .nameBrand img {
+    max-width: 80px;
+  }
+  .mainHome .navbar .container .navbarMobile .userControl a ion-icon {
+    font-size: 16px;
+    margin: 0 .4rem;
+  }
+  .mainHome .navbar .container .navbarDesktop {
+    display: none;
+  }
+  .mainHome .mainContent {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  .mainHome .mainContent .container .containerBanner .leftArrow ion-icon, .mainHome .mainContent .container .containerBanner .rightArrow ion-icon {
+    font-size: 22px;
+  }
+  .mainHome .mainContent .container .containerBanner .wrapperBanner {
+    margin-bottom: 0;
+  }
+  .mainHome .mainContent .container .containerBanner .wrapperBanner .slick-dots li button::before {
+    color: #fff;
+    font-size: 6px;
+  }
+  .mainHome .mainContent .container .containerGameList {
+    margin-top: 3rem;
+  }
+  .mainHome .mainContent .container .containerGameList .nameContent {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  .mainHome .mainContent .container .containerGameList .product-list {
+    justify-content: center;
+  }
+  .mainHome .mainContent .container .containerGameList .product-list .game {
+    width: 100%;
+    max-width: 30%;
+    padding: .5rem;
+    border-radius: 12px;
+    margin: 0 .3rem;
+    margin-bottom: .5rem;
+  }
+  .mainHome .mainContent .container .containerGameList .product-list .game .imgProduct {
+    border-radius: 6px;
+  }
+  .mainHome .mainContent .container .containerGameList .product-list .game .nameProduct {
+    font-size: 12px;
+    margin: 1rem 0 .5rem 0;
+  }
+  .mainHome .mainContent .container .containerBenefit .headerBenefit {
+    margin-bottom: 1rem;
+  }
+  .mainHome .mainContent .container .containerBenefit .headerBenefit .nameContent {
+    font-size: 18px;
+    color: #fff;
+  }
+  .mainHome .mainContent .container .containerBenefit .wrapperBenefit .benefit {
+    padding: 1rem;
+    margin: .5rem;
+  }
+  .mainHome .mainContent .container .containerBenefit .wrapperBenefit .benefit .iconBenefit {
+    margin-bottom: 1rem;
+    max-width: 80px;
+  }
+  .mainHome .mainContent .container .containerBenefit .wrapperBenefit .benefit .nameBenefit {
+    font-size: 14px;
+    margin-bottom: .3rem;
+  }
+  .mainHome .mainContent .container .containerBenefit .wrapperBenefit .benefit .infoBenefit {
+    font-size: 10px;
+    max-width: 200px;
+  }
+  .mainHome .mobileMenu {
+    padding: .5rem 0;
+  }
+  .mainHome .mobileMenu .menu {
+    padding: 0 2rem;
+    font-size: 12px;
+  }
+  .mainHome .mobileMenu .menu ion-icon {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainHome .navbar {
+    width: 100%;
+  }
+  .mainHome .navbar .container .navbarMobile {
+    display: none;
+  }
+  .mainHome .navbar .container .navbarDesktop {
+    display: flex;
+  }
+  .mainHome .navbar .container .navbarDesktop .iconBrand img {
+    max-width: 100px;
+  }
+  .mainHome .navbar .container .navbarDesktop .userControl a {
+    font-size: 14px;
+    margin: 0 .7rem;
+  }
+  .mainHome .navbar .container .navbarDesktop .userControl a ion-icon {
+    margin-right: .3rem;
+  }
+  .mainHome .mainContent {
+    padding-top: 7rem;
+  }
+  .mainHome .mainContent .container .containerBanner .leftArrow ion-icon, .mainHome .mainContent .container .containerBanner .rightArrow ion-icon {
+    font-size: 32px;
+  }
+  .mainHome .mainContent .container .containerBenefit .wrapperBenefit .benefit .infoBenefit {
+    font-size: 12px;
+    max-width: 250px;
+  }
+  .mainHome .mobileMenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mainHome .mainContent .container .containerGameList .nameContent {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  .mainHome .mainContent .container .containerGameList .product-list {
+    justify-content: flex-start;
+  }
+  .mainHome .mainContent .container .containerGameList .product-list .game {
+    max-width: 23.29%;
+    border-radius: 16px;
+    margin: .5rem;
+  }
+  .mainHome .mainContent .container .containerGameList .product-list .game .imgProduct {
+    border-radius: 16px;
+  }
+  .mainHome .mainContent .container .containerGameList .product-list .game .nameProduct {
+    font-size: 12px;
+    margin: 1rem 0 .5rem 0;
+  }
+  .mainHome .mainContent .container .containerBenefit .headerBenefit .nameContent {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainHome .mainContent .container .containerGameList .product-list .game {
+    max-width: 23.56%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 800px;
+  }
+  .mainHome .mainContent .container .containerGameList .product-list .game {
+    max-width: 22.94%;
+  }
+}

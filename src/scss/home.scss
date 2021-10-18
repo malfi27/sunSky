@@ -1,0 +1,522 @@
+/*=============
+Font import From Google Font
+==============*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Overpass', sans-serif;
+}
+
+
+/*=============
+Reset HTML
+==============*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+*,::before,::after,p,h1,h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+/*=============
+Variable Collor
+==============*/
+$items-color : #0c1427;
+$navbar-background : #0c1427;
+$background-color :#070d19;
+$button-color :#727cf5;
+$font-color :#bfc3ce;
+$font-white-color :#fff;
+$font-weight-items :600;
+body {
+    background: $background-color;
+}
+.mainHome {
+    transition: .5s;
+    .navbar {
+        background: $navbar-background;
+        transition: .5s;
+        .container {
+            display: flex;
+            flex-direction: column;
+            .navbarMobile {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                }
+                .navbarIcon {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .nameBrand {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .userControl {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    a {
+                        text-decoration: none;
+                        &:hover {
+                            ion-icon {
+                                color: $button-color;
+                                transition: .3s;
+                            }
+                        }
+                        ion-icon {
+                            color: $font-color;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+            .navbarDesktop {
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                .iconBrand {
+                    img {
+                        width: 100%;
+                    }
+                }
+                .userControl {
+                    display: flex;
+                    align-items: center;
+                    a {
+                        text-decoration: none;
+                        color: $font-color;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 700;
+                        transition: color .3s;
+                        &:hover {
+                            color: $button-color;
+                            transition: color .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar.onScrolled {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        transition: .5s;
+
+    }
+    .mainContent {
+        .container {
+            .containerBanner {
+                position: relative;
+                .wrapperBanner {
+                    .banner {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .leftArrow ,.rightArrow {
+                    position: absolute;
+                    top: 45%;
+                    z-index: 2;
+                    display: flex;
+                    align-items: center;
+
+                    ion-icon {
+                        color: #fff;
+                        opacity: .5;
+                        transition: .3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            opacity: 1;
+                            transition: .3s;
+                        }
+                    }
+                }
+                .leftArrow {
+                    left: 15px;
+                }
+                .rightArrow {
+                    right: 15px;
+                }
+            }
+            .containerGameList {
+                margin-bottom: 1.5rem;
+              .nameContent  {
+                  color: $font-white-color;
+              }      
+              .product-list {
+                  display: flex;
+                  flex-wrap: wrap;
+                  .game {
+                      background: $items-color;
+                      border: 1px solid #172340;
+                      text-decoration: none;
+                      transition: border .3s;
+                      overflow: hidden;
+
+                      &:hover {
+                          border: 1px solid #fff;
+                          transition: border .3s;
+                      }
+                      .imgProduct {
+                          width: 100%;
+                          transition: transform .3s;
+                          &:hover {
+                              transform: scale(1.1);
+                              transition: transform .3s;
+                          }
+                      }
+                      .nameProduct {
+                        text-align: center;
+                        color: $font-color;
+                        font-weight: 600;
+                      }
+                  }
+              }
+            }
+            .containerBenefit {
+                .headerBenefit {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .arrowsBenefit {
+                        display: flex;
+                        align-items: center;
+
+                        .btnArrow {
+                            border: 2px solid #727cf5;
+                            display: flex;
+                            align-items: center;
+                            padding: .5rem;
+                            transition: .3s;
+                            cursor: pointer;
+                            ion-icon {
+                                color: #fff;
+                                font-size: 20px;
+                            }
+                            &:not( :last-child) {
+                                margin-right: .5rem;
+                            }
+                            &:hover {
+                                background: $button-color;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+                .wrapperBenefit {
+                    display: flex;
+                    height: 100%;
+                    .benefit {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        border: 3px solid #727cf5;
+                        border-radius: 20px;
+                        width: 100%;
+                        background: $items-color;
+                        color: $font-color;
+                        transition: .5s;
+                        height: 100%;
+                        &:hover {
+                            background: $button-color;
+                            border: 3px solid #1c2741;
+                            transition: .5s;
+                        }
+                        .iconBenefit {
+                            width: 100%;
+                        }
+                        .nameBenefit {
+                            font-weight: 800;
+                        }
+                    }
+
+                    .slick-list {
+                        .slick-track {
+                            display: flex !important;
+                            .slick-slide {
+                                height: inherit !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mobileMenu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: $navbar-background;
+        .menu {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-decoration: none;
+            color: $font-color;
+        }
+    }
+}
+
+@media screen and (min-width : 0px) {
+    .mainHome {
+        .navbar {
+            .container {
+                .navbarMobile {
+                    .navbarIcon {
+                        img {
+                            max-width: 30px;
+                        }
+                    }
+                    .nameBrand {
+                        img {
+                            max-width: 80px;
+                        }
+                    }
+                    .userControl {
+                        a {
+                            ion-icon {
+                                font-size: 16px;
+                                margin: 0 .4rem;
+                            }
+                        }
+                    }
+                }
+                .navbarDesktop {
+                    display: none;
+                }
+            }
+        }
+        .mainContent {
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+            .container {
+                .containerBanner {
+                    .leftArrow ,.rightArrow {
+                        ion-icon {
+                            font-size: 22px;
+                        }
+                    }
+                    .wrapperBanner {
+                        margin-bottom: 0;
+                        .slick-dots {
+                            li {
+                                button {
+                                    &::before {
+                                        color: #fff;
+                                        font-size: 6px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .containerGameList {
+                    margin-top: 3rem;
+                    .nameContent  {
+                        font-size: 18px;
+                        margin-bottom: 1rem;
+                    }     
+                    .product-list {
+                        justify-content: center;
+                        .game {
+                            width: 100%;
+                            max-width: 30%;
+                            padding: .5rem;
+                            border-radius: 12px;
+                            margin: 0 .3rem;
+                            margin-bottom: .5rem;
+                            .imgProduct {
+                                border-radius: 6px;
+                            }
+                            .nameProduct {
+                              font-size: 12px;
+                              margin: 1rem 0 .5rem 0;
+                            }
+                        } 
+                    }
+                }
+                .containerBenefit {
+                    .headerBenefit {
+                        margin-bottom: 1rem;
+                        .nameContent  {
+                            font-size: 18px;
+                            color: $font-white-color;
+                        } 
+                    }
+                    .wrapperBenefit {
+                        .benefit {
+                            padding: 1rem;
+                            margin: .5rem;
+                            .iconBenefit {
+                                margin-bottom: 1rem;
+                                max-width: 80px;
+                            }
+                            .nameBenefit {
+                                font-size: 14px;
+                                margin-bottom: .3rem;
+                            }
+                            .infoBenefit {
+                                font-size: 10px;
+                                max-width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mobileMenu {
+            padding: .5rem 0;
+            .menu {
+                padding: 0 2rem;
+                font-size: 12px;
+                ion-icon {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 768px) {
+    .mainHome {
+        .navbar {
+            width: 100%;
+            .container {
+                .navbarMobile {
+                    display: none;
+                }
+                .navbarDesktop {
+                    display: flex;
+                    .iconBrand {
+                        img {
+                            max-width: 100px;
+                        }
+                    }
+                    .userControl {
+                        a {
+                            font-size: 14px;
+                            margin: 0 .7rem;
+                            ion-icon {
+                                margin-right: .3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mainContent {
+            padding-top: 7rem;
+            .container {
+                .containerBanner {
+                    .leftArrow ,.rightArrow {
+                        ion-icon {
+                            font-size: 32px;
+                        }
+                    }
+                }
+                .containerBenefit {
+                    .wrapperBenefit {
+                        .benefit {
+                            .infoBenefit {
+                                font-size: 12px;
+                                max-width: 250px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mobileMenu {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width : 992px) {
+    .mainHome {
+        .mainContent {
+            .container {
+                .containerGameList {
+                    .nameContent  {
+                        font-size: 24px;
+                        margin-bottom: 1rem;
+                    }     
+                    .product-list {
+                        justify-content: flex-start;
+                        .game {
+                            max-width: 23.29%;
+                            border-radius: 16px;
+                            margin: .5rem;
+                            .imgProduct {
+                                border-radius: 16px;
+                            }
+                            .nameProduct {
+                              font-size: 12px;
+                              margin: 1rem 0 .5rem 0;
+                            }
+                        } 
+                    }
+                }
+                .containerBenefit {
+                    .headerBenefit {
+                        .nameContent  {
+                            font-size: 24px;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    .mainHome {
+        .mainContent {
+            .container {
+                .containerGameList {
+                    .product-list {
+                        .game {
+                            max-width: 23.56%;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :1400px) {
+    .container {
+        max-width: 800px;
+    }
+    .mainHome {
+        .mainContent {
+            .container {
+                .containerGameList {
+                    .product-list {
+                        .game {
+                            max-width: 22.94%;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
