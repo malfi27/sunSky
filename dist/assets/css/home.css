@@ -279,6 +279,74 @@ body {
   height: inherit !important;
 }
 
+.mainHome .mainContent .container .containerAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #0c1427;
+  border: 3px solid #1c2741;
+}
+
+.mainHome .mainContent .container .containerAbout .about {
+  margin-bottom: 2rem;
+  color: #bfc3ce;
+}
+
+.mainHome .mainContent .container .containerAbout .about .nameContent {
+  font-weight: 800;
+}
+
+.mainHome .mainContent .container .containerAbout .about .aboutInformation {
+  font-weight: 500;
+}
+
+.mainHome .mainContent .container .containerAbout .metodePembayaran .nameContent {
+  font-weight: 700;
+  color: #bfc3ce;
+  font-size: 14px;
+  margin-bottom: .5rem;
+}
+
+.mainHome .mainContent .container .containerAbout .metodePembayaran .wrapperMetode {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mainHome .mainContent .container .containerAbout .metodePembayaran .wrapperMetode .metode {
+  background: #c3c3c3;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1c2741;
+  transition: .3s;
+}
+
+.mainHome .mainContent .container .containerAbout .metodePembayaran .wrapperMetode .metode:hover {
+  background: #fff;
+  transition: .3s;
+}
+
+.mainHome .mainContent .container .containerAbout .metodePembayaran .wrapperMetode .metode:hover img {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  transition: .3s;
+}
+
+.mainHome .mainContent .container .containerAbout .metodePembayaran .wrapperMetode .metode img {
+  width: 100%;
+  border-radius: 4px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
 .mainHome .mobileMenu {
   width: 100%;
   display: flex;
@@ -311,6 +379,7 @@ body {
   .mainHome .mainContent {
     padding-top: 5rem;
     padding-bottom: 2rem;
+    margin-bottom: 3rem;
   }
   .mainHome .mainContent .container .containerBanner .leftArrow ion-icon, .mainHome .mainContent .container .containerBanner .rightArrow ion-icon {
     font-size: 22px;
@@ -347,6 +416,9 @@ body {
     font-size: 12px;
     margin: 1rem 0 .5rem 0;
   }
+  .mainHome .mainContent .container .containerBenefit {
+    margin-bottom: 1.5rem;
+  }
   .mainHome .mainContent .container .containerBenefit .headerBenefit {
     margin-bottom: 1rem;
   }
@@ -369,6 +441,32 @@ body {
   .mainHome .mainContent .container .containerBenefit .wrapperBenefit .benefit .infoBenefit {
     font-size: 10px;
     max-width: 200px;
+  }
+  .mainHome .mainContent .container .containerAbout {
+    padding: 2rem 1rem;
+    border-radius: 12px;
+  }
+  .mainHome .mainContent .container .containerAbout .about .nameContent {
+    font-size: 16px;
+    margin-bottom: .5rem;
+  }
+  .mainHome .mainContent .container .containerAbout .about .aboutInformation {
+    font-size: 11px;
+    max-width: 400px;
+  }
+  .mainHome .mainContent .container .containerAbout .metodePembayaran .nameContent {
+    font-weight: 800;
+    color: #bfc3ce;
+  }
+  .mainHome .mainContent .container .containerAbout .metodePembayaran .wrapperMetode .metode {
+    padding: .5rem;
+    margin: .2rem;
+    min-width: 30px;
+    min-height: 47px;
+    max-height: 47px;
+  }
+  .mainHome .mainContent .container .containerAbout .metodePembayaran .wrapperMetode .metode img {
+    max-width: 55px;
   }
   .mainHome .mobileMenu {
     padding: .5rem 0;
@@ -404,6 +502,7 @@ body {
   }
   .mainHome .mainContent {
     padding-top: 7rem;
+    margin-bottom: 0rem;
   }
   .mainHome .mainContent .container .containerBanner .leftArrow ion-icon, .mainHome .mainContent .container .containerBanner .rightArrow ion-icon {
     font-size: 32px;
@@ -445,6 +544,25 @@ body {
 @media screen and (min-width: 1200px) {
   .mainHome .mainContent .container .containerGameList .product-list .game {
     max-width: 23.56%;
+  }
+  .mainHome .mainContent .container .containerAbout .about .nameContent {
+    font-size: 18px;
+  }
+  .mainHome .mainContent .container .containerAbout .about .aboutInformation {
+    font-size: 12px;
+  }
+  .mainHome .mainContent .container .containerAbout .metodePembayaran .nameContent {
+    font-size: 16px;
+  }
+  .mainHome .mainContent .container .containerAbout .metodePembayaran .wrapperMetode .metode {
+    padding: .5rem;
+    margin: .2rem;
+    min-width: 30px;
+    min-height: 47px;
+    max-height: 47px;
+  }
+  .mainHome .mainContent .container .containerAbout .metodePembayaran .wrapperMetode .metode img {
+    max-width: 55px;
   }
 }
 
