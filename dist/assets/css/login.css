@@ -115,6 +115,9 @@ body {
   #auth #auth-left .notice p {
     font-size: 14px;
   }
+  #auth #auth-left .notice p a {
+    color: #727cf5;
+  }
 }
 
 @media screen and (min-width: 992px) {

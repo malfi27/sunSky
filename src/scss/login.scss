@@ -133,6 +133,9 @@ body {
             .notice {
                 p {
                     font-size: 14px;
+                    a {
+                        color: $button-color;
+                    }
                 }
             }
         }
