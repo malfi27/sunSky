@@ -145,4 +145,7 @@ body {
   #auth #auth-left {
     padding: 5rem;
   }
+  #auth #auth-left .auth-logo img {
+    height: 4rem;
+  }
 }
