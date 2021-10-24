@@ -1,0 +1,167 @@
+/*=============
+Font import From Google Font
+==============*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'Overpass', sans-serif;
+}
+
+/*=============
+Reset HTML
+==============*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after, p, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+/*=============
+Variable Collor
+==============*/
+body {
+  background: #070d19;
+}
+
+.mainHome {
+  transition: .5s;
+}
+
+.mainHome .navbar {
+  background: #0c1427;
+  transition: .5s;
+}
+
+.mainHome .navbar .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainHome .navbar .container .navbarMobile {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarMobile a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.mainHome .navbar .container .navbarMobile .navbarIcon {
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarMobile .navbarIcon img {
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarMobile .nameBrand {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mainHome .navbar .container .navbarMobile .nameBrand img {
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarMobile .userControl {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mainHome .navbar .container .navbarMobile .userControl a {
+  text-decoration: none;
+}
+
+.mainHome .navbar .container .navbarMobile .userControl a:hover ion-icon {
+  color: #727cf5;
+  transition: .3s;
+}
+
+.mainHome .navbar .container .navbarMobile .userControl a ion-icon {
+  color: #bfc3ce;
+  transition: .3s;
+}
+
+.mainHome .navbar .container .navbarDesktop {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarDesktop .iconBrand img {
+  width: 100%;
+}
+
+.mainHome .navbar .container .navbarDesktop .userControl {
+  display: flex;
+  align-items: center;
+}
+
+.mainHome .navbar .container .navbarDesktop .userControl a {
+  text-decoration: none;
+  color: #bfc3ce;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  transition: color .3s;
+}
+
+.mainHome .navbar .container .navbarDesktop .userControl a:hover {
+  color: #727cf5;
+  transition: color .3s;
+}
+
+.mainHome .navbar.onScrolled {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  transition: .5s;
+}
+
+@media screen and (min-width: 0px) {
+  .mainHome .navbar .container .navbarMobile {
+    display: flex;
+  }
+  .mainHome .navbar .container .navbarMobile .navbarIcon img {
+    max-width: 30px;
+  }
+  .mainHome .navbar .container .navbarMobile .nameBrand img {
+    max-width: 80px;
+  }
+  .mainHome .navbar .container .navbarMobile .userControl a ion-icon {
+    font-size: 16px;
+    margin: 0 .4rem;
+  }
+  .mainHome .navbar .container .navbarDesktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainHome .navbar {
+    width: 100%;
+  }
+  .mainHome .navbar .container .navbarMobile {
+    display: none;
+  }
+  .mainHome .navbar .container .navbarDesktop {
+    display: flex;
+  }
+  .mainHome .navbar .container .navbarDesktop .iconBrand img {
+    max-width: 100px;
+  }
+  .mainHome .navbar .container .navbarDesktop .userControl a {
+    font-size: 14px;
+    margin: 0 .7rem;
+  }
+  .mainHome .navbar .container .navbarDesktop .userControl a ion-icon {
+    margin-right: .3rem;
+  }
+}

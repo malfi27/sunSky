@@ -34,89 +34,6 @@ body {
 }
 .mainHome {
     transition: .5s;
-    .navbar {
-        background: $navbar-background;
-        transition: .5s;
-        .container {
-            display: flex;
-            flex-direction: column;
-            .navbarMobile {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-                a {
-                    text-decoration: none;
-                    display: flex;
-                    align-items: center;
-                }
-                .navbarIcon {
-                    width: 100%;
-                    img {
-                        width: 100%;
-                    }
-                }
-                .nameBrand {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    img {
-                        width: 100%;
-                    }
-                }
-                .userControl {
-                    width: 100%;
-                    display: flex;
-                    justify-content: flex-end;
-                    a {
-                        text-decoration: none;
-                        &:hover {
-                            ion-icon {
-                                color: $button-color;
-                                transition: .3s;
-                            }
-                        }
-                        ion-icon {
-                            color: $font-color;
-                            transition: .3s;
-                        }
-                    }
-                }
-            }
-            .navbarDesktop {
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-                .iconBrand {
-                    img {
-                        width: 100%;
-                    }
-                }
-                .userControl {
-                    display: flex;
-                    align-items: center;
-                    a {
-                        text-decoration: none;
-                        color: $font-color;
-                        display: flex;
-                        align-items: center;
-                        font-weight: 700;
-                        transition: color .3s;
-                        &:hover {
-                            color: $button-color;
-                            transition: color .3s;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .navbar.onScrolled {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        transition: .5s;
-
-    }
     .mainContent {
         .container {
             .containerBanner {
@@ -336,33 +253,6 @@ body {
 
 @media screen and (min-width : 0px) {
     .mainHome {
-        .navbar {
-            .container {
-                .navbarMobile {
-                    .navbarIcon {
-                        img {
-                            max-width: 30px;
-                        }
-                    }
-                    .nameBrand {
-                        img {
-                            max-width: 80px;
-                        }
-                    }
-                    .userControl {
-                        a {
-                            ion-icon {
-                                font-size: 16px;
-                                margin: 0 .4rem;
-                            }
-                        }
-                    }
-                }
-                .navbarDesktop {
-                    display: none;
-                }
-            }
-        }
         .mainContent {
             padding-top: 5rem;
             padding-bottom: 2rem;
@@ -490,31 +380,6 @@ body {
 
 @media screen and (min-width : 768px) {
     .mainHome {
-        .navbar {
-            width: 100%;
-            .container {
-                .navbarMobile {
-                    display: none;
-                }
-                .navbarDesktop {
-                    display: flex;
-                    .iconBrand {
-                        img {
-                            max-width: 100px;
-                        }
-                    }
-                    .userControl {
-                        a {
-                            font-size: 14px;
-                            margin: 0 .7rem;
-                            ion-icon {
-                                margin-right: .3rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
         .mainContent {
             padding-top: 7rem;
             margin-bottom: 0rem;
