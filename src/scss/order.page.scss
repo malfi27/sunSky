@@ -147,6 +147,9 @@ body {
     }
     .inputForm {
         padding: 0;
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
     }
 
     .wrapperTwo {
@@ -162,6 +165,9 @@ body {
     }
     .inputForm {
         padding: .5rem;
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
     }
     .mainContent {
         padding-top: 7rem;
